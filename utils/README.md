@@ -22,5 +22,13 @@ Arguments
 
 Example:
 	./create_var.bash ARM_CLIENT_SECRET $ARM_CLIENT_SECRET env true
-	./create_var.bash public_key $PUBLIC_KEY
+	./create_var.bash public_key $"{PUBLIC_KEY}" terraform
+
+
+for var in ARM_CLIENT_ID ARM_CLIENT_SECRET ARM_SUBSCRIPTION_ID ARM_TENANT_ID
+do
+./create_var.bash $var $(printenv $var) env true
+done
+
+./create_var.bash public_key $"{PUBLIC_KEY}" terraform
 

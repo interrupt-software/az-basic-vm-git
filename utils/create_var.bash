@@ -49,7 +49,7 @@ function push_variable {
         "value": "$2",
         "category": "$CATEGORY",
         "hcl": false,
-        "sensitive": $SENSITIVE
+        "sensitive": "$SENSITIVE"
       },
       "relationships": {
         "workspace": {
