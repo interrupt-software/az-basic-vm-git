@@ -1,6 +1,6 @@
 variable "prefix" {
   type    = string
-  default = "interrupt-demo01"
+  default = "interrupt-demo02"
 }
 
 variable "location" {
@@ -11,4 +11,8 @@ variable "location" {
 variable "tfadmin" {
   type    = string
   default = "tfadmin"
+}
+
+variable "public_key" {
+  type = string
 }
