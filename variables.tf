@@ -1,6 +1,6 @@
 variable "prefix" {
   type    = string
-  default = "change-me"
+  default = "interrupt-git"
 }
 
 variable "location" {

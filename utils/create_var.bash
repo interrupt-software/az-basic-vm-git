@@ -78,7 +78,7 @@ EOF
   # Clean up as good practice; to ensure nothing is left on
   # the worker node
   #
-  rm -f create_var.json
+  # rm -f create_var.json
 
   WORKSPACE_ID=$(echo $RESPONSE | jq '.data.id' | tr -d '"')
 
